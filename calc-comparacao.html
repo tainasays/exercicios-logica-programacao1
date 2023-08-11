@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Módulo II</title>
+
+    <style>
+        * {
+            font-family: monospace;
+            font-weight: 500;
+        }
+
+        input,
+        select {
+            width: 100px;
+
+            font-family: monospace;
+            font-size: 20px;
+            border-radius: 3.2px;
+        }
+
+        select {
+            background-color: rgb(238, 220, 254);
+            border: solid 2px;
+        }
+
+        #button {
+            cursor: pointer;
+            background-color: rgb(217, 255, 242);
+        }
+
+        .calculadora_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title_container {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title_container">
+        <h1>Calculadora de Operadores de Comparação</h1>
+    </div>
+
+
+    <div class="calculadora_container">
+        <div class="calc">
+            <input type="number" id="n1" placeholder="0" />
+            <select id="selected">
+                <option selected> > </option>
+                <option> >= </option>
+                <option>
+                    < </option>
+                <option>
+                    <= </option>
+                <option> === </option>
+                <option> !== </option>
+                <option> && </option>
+                <option> || </option>
+            </select>
+            <input type="number" id="n2" placeholder="0" />
+            <input type="button" id="button" value="=" onclick="calcular()" />
+            <input id="n3" placeholder="0" readonly />
+        </div>
+
+
+
+    </div>
+
+    <script src="calc-comparacao.js"></script>
+
+</body>
+
+</html>
